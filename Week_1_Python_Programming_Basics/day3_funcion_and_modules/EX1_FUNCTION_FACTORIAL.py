@@ -9,7 +9,11 @@ def fact(num):
             result *= i
         return result
     
-print(fact(-3));
-print(fact(0));
-print(fact(1));
-print(fact(5));
+def caller():
+    print(fact(-3));
+    print(fact(0));
+    print(fact(1));
+    print(fact(5));
+
+
+caller();
