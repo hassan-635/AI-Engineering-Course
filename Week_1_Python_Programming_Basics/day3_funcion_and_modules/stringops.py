@@ -5,10 +5,10 @@ def rev(a):
     return reversed_text;
 
 def vowel_count(a):
-    vowels = "aeiou"
-    count = 1;
+    vowels = "aeiouAEIOU"
+    count = 0;
     for char in a:
-        for char in vowels:
+        if char in vowels:
             count+=1;
     return count
 
