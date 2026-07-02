@@ -14,3 +14,9 @@ def division(a, b):
         return "Runtime Error"
     else:
         return a/b;
+
+def checker(a):
+    if(a % 2 == 0):
+        return "you entered even number"
+    else:
+        return "you entered odd number"
