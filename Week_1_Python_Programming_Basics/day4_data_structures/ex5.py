@@ -2,6 +2,8 @@
 
 # program to store student grades in dictionary and calculates average grade
 
+
+
 grades = {
     "chemistry": "A",
     "urdu": "C",
@@ -23,7 +25,7 @@ for subject in grades:
     grade = grades[subject]
     total_marks+= numbers[grade]
 
-average = total_marks/5
+average = total_marks/len(grades)
 print(average)
     
 print(total_marks)
