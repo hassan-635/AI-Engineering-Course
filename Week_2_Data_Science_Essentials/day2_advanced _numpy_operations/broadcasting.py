@@ -11,3 +11,7 @@ broadcasted_matrix = matrix + vector;
 print("Boradcasted matrix : ")
 print(broadcasted_matrix)
 
+print("After multiplication by scalar : ")
+multiplicated = broadcasted_matrix * 10;
+print(multiplicated)
+
