@@ -12,3 +12,6 @@ print(df)
 
 df["Country"] = ["Pakistan", "Iran", "Iraq", "Pakistan", "Iran"]
 print(df)
+
+dict = df.to_dict()
+print(dict)
