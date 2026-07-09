@@ -13,5 +13,6 @@ print(df)
 df["Country"] = ["Pakistan", "Iran", "Iraq", "Pakistan", "Iran"]
 print(df)
 
-dict = df.to_dict()
-print(dict)
+student_data = df.to_dict()
+df.to_excel("Week_2_Data_Science_Essentials/day3_pandas_for_data_manipulation/data.xlsx", index=False)
+df.to_csv("Week_2_Data_Science_Essentials/day3_pandas_for_data_manipulation/data.csv", index=False)
