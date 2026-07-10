@@ -9,3 +9,8 @@ data = {
 
 df = pd.DataFrame(data)
 print(df)
+print("\n__________________________________________________________________")
+
+df["Age"] = df["Age"].fillna(df["Age"].mean())
+print("\n")
+print(df)
