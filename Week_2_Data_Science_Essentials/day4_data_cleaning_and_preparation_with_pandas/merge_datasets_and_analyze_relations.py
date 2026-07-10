@@ -22,4 +22,4 @@ df3 = pd.DataFrame(attendance)
 
 df4 = pd.merge(df1, df2, on="Student_ID", how="outer")
 df = pd.merge(df4, df3, on="Student_ID", how="outer")
-print(df)
+print(df.to_string(index=False))
