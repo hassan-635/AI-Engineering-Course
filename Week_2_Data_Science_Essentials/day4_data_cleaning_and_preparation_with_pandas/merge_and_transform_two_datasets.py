@@ -11,3 +11,7 @@ df2 = pd.DataFrame({
     "id" : [2, 3, 4],
     "Country" : ["Pakistan", "Iran", "Iraq"]
 })
+
+df = pd.merge(df1, df2, how="inner",on="id")
+
+print(df)
