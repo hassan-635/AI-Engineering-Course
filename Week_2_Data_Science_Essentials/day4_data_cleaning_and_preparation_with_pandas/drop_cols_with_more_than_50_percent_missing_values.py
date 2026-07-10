@@ -11,3 +11,6 @@ df = pd.DataFrame({
 print("\n_____________________________________________________________\nOriginal Dataset : \n")
 print(df.to_string(index=False))
 print("\n_____________________________________________________________\nDropped Miising Values Dataset : \n")
+threshold = len(df) * 0.5
+df = df.dropna(axis=1, thresh=threshold)
+print(df.to_string(index=False))
