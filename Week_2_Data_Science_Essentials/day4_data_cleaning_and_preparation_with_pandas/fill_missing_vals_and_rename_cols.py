@@ -13,6 +13,8 @@ print("\n__________________________________________________________________")
 
 df["Age"] = df["Age"].fillna(df["Age"].mean())
 df["Score"] = df["Score"].interpolate()
+df = df.dropna()
+df = df.rename(columns={"Name": "Student_Name", "Score": "Marks"})
 print("\n")
 print(df)
 print("\n__________________________________________________________________")
