@@ -23,3 +23,5 @@ df3 = pd.DataFrame(attendance)
 df4 = pd.merge(df1, df2, on="Student_ID", how="outer")
 df = pd.merge(df4, df3, on="Student_ID", how="outer")
 print(df.to_string(index=False))
+
+print(df.corr(numeric_only=True))
