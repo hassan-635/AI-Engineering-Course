@@ -9,9 +9,9 @@ df1 = pd.DataFrame({
 
 df2 = pd.DataFrame({
     "id" : [2, 3, 4],
-    "Country" : ["Pakistan", "Iran", "Iraq"]
+    "Score" : [85, 90, 95]
 })
 
 df = pd.merge(df1, df2, how="inner",on="id")
-
+df["Score"] = (df["Score"]/100)*100
 print(df)
