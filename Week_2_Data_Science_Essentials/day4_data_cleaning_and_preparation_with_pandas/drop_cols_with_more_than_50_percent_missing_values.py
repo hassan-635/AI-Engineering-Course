@@ -3,7 +3,7 @@ import pandas as pd
 
 df = pd.DataFrame({
     "Id" : [1, 2, 3, 4, 5, 6, 7, 8],
-    "Name" : ["Alice", "Bob", np.nan, np.nan, "Elon", "Faizan", np.nan, "Haider"],
+    "Name" : ["Alice", "Bob", "Charlie", np.nan, "Elon", "Faizan", np.nan, "Haider"],
     "Marks" : [45, 50, 56, np.nan, np.nan, np.nan, np.nan, np.nan], 
     "Score" : [10, 20, np.nan, np.nan, np.nan, np.nan, np.nan, 10]
 })
