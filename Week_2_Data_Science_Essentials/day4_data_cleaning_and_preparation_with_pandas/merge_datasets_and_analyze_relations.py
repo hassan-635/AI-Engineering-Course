@@ -15,3 +15,11 @@ attendance = {
     "Student_ID": [101, 102, 103, 104, 105],
     "Attendance": [95, 80, 90, 70, 98]
 }
+
+df1 = pd.DataFrame(students)
+df2 = pd.DataFrame(marks)
+df3 = pd.DataFrame(attendance)
+
+df4 = pd.merge(df1, df2, on="Student_ID", how="outer")
+df = pd.merge(df4, df3, on="Student_ID", how="outer")
+print(df)
