@@ -27,3 +27,8 @@ df = pd.DataFrame(sales_data)
 df["Total_Sale"] = df["Quantity"] * df["Price"]
 
 print(df)
+
+# group by city
+
+grouped_data_city = df.groupby("City").count()
+print(grouped_data_city)
