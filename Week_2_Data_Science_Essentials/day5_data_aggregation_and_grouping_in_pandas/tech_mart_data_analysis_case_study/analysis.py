@@ -1,0 +1,82 @@
+import pandas as pd
+
+sales = {
+    "Order_ID":[1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,
+                1011,1012,1013,1014,1015,1016,1017,1018,1019,1020],
+
+    "Date":[
+        "2026-01-01","2026-01-01","2026-01-02","2026-01-02","2026-01-03",
+        "2026-01-03","2026-01-04","2026-01-04","2026-01-05","2026-01-05",
+        "2026-01-06","2026-01-06","2026-01-07","2026-01-07","2026-01-08",
+        "2026-01-08","2026-01-09","2026-01-09","2026-01-10","2026-01-10"],
+
+    "City":[
+        "Lahore","Karachi","Islamabad","Rawalpindi","Lahore",
+        "Karachi","Islamabad","Rawalpindi","Lahore","Karachi",
+        "Islamabad","Rawalpindi","Lahore","Karachi","Islamabad",
+        "Rawalpindi","Lahore","Karachi","Islamabad","Rawalpindi"],
+
+    "Salesperson":[
+        "Ali","Hassan","Ahmed","Bilal","Ali",
+        "Hassan","Ahmed","Bilal","Usman","Ali",
+        "Ahmed","Bilal","Usman","Hassan","Ali",
+        "Bilal","Ahmed","Usman","Ali","Hassan"],
+
+    "Category":[
+        "Laptop","Mobile","Accessories","Laptop","Mobile",
+        "Accessories","Laptop","Mobile","Accessories","Laptop",
+        "Mobile","Accessories","Laptop","Mobile","Accessories",
+        "Laptop","Mobile","Accessories","Laptop","Mobile"],
+
+    "Product":[
+        "HP","Samsung","Mouse","Dell","iPhone",
+        "Keyboard","Lenovo","Realme","Headphones","Asus",
+        "Vivo","Mouse","HP","Samsung","Keyboard",
+        "Dell","iPhone","Headphones","Lenovo","Vivo"],
+
+    "Quantity":[
+        2,3,5,1,2,
+        4,2,3,6,2,
+        5,4,1,3,2,
+        2,4,5,3,2],
+
+    "Unit_Price":[
+        120000,60000,3000,130000,150000,
+        5000,125000,50000,7000,135000,
+        55000,3500,120000,60000,5000,
+        130000,150000,7000,125000,55000],
+
+    "Payment":[
+        "Cash","Card","Online","Cash","Online",
+        "Card","Cash","Online","Cash","Card",
+        "Online","Cash","Card","Online","Cash",
+        "Card","Online","Cash","Card","Online"]
+}
+
+df = pd.DataFrame(sales)
+
+df["Revenue"] = df["Quantity"] * df["Unit_Price"]
+
+print(df)
+
+print("_________________________________________________________________________")
+
+print("Total Revenue of each city : ")
+revenue = df.groupby("City").agg(
+    {
+        "Revenue" : ["sum"]
+    }
+)
+print(revenue)
+
+print("_________________________________________________________________________")
+
+print("Average Revenue of each city : ")
+avg_rev = df.groupby("City").agg(
+    {
+        "Revenue": ["mean"]
+    }
+)
+print(avg_rev)
+
+print("_________________________________________________________________________")
