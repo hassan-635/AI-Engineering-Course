@@ -1,4 +1,3 @@
-# Count employees in each department.
 # Find the average experience of each department.
 # Use .agg() to show:
 # Mean Salary
@@ -33,3 +32,8 @@ print(highest_salary)
 lowest_salary = df.groupby("Department")["Salary"].min()
 print("Lowest Salary of Every Department : ")
 print(lowest_salary)
+
+# Count employees in each department.
+emp = df.groupby("Department")["Name"].count()
+print("Total Employees in each department : ")
+print(emp)
