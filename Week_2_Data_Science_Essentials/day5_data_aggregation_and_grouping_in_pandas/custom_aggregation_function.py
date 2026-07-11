@@ -8,6 +8,9 @@ employees = {
     "Experience": [2, 1, 5, 4, 2, 6, 5, 3]
 }
 
+df = pd.DataFrame(employees)
+print(df.to_string(index=False))
+
 def variance(series):
     mean = np.mean(series)
     return ((series - mean) ** 2)/(len(series)-1)
