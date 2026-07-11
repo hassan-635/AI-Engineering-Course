@@ -13,5 +13,12 @@ print(df.to_string(index=False))
 
 def variance(series):
     mean = np.mean(series)
-    return ((series - mean) ** 2)/(len(series)-1)
+    return np.sum((series - mean) ** 2)/(len(series)-1)
     
+mean_and_variance = df.groupby("Department").agg(
+    {
+        "Salary" : ["mean", variance]
+    }
+)
+
+print(mean_and_variance)
