@@ -19,4 +19,4 @@ employees = {
 }
 
 df = pd.DataFrame(employees)
-
+print(df.to_string(index=False))
