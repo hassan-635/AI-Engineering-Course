@@ -22,4 +22,8 @@ student_data = {
     ]
 }
 df = pd.DataFrame(student_data)
-print(df)
+
+df = pd.get_dummies(df, columns=["Department"], dtype=int)
+
+print(df.to_string(index=False))
+print(df.corr(numeric_only=True))
