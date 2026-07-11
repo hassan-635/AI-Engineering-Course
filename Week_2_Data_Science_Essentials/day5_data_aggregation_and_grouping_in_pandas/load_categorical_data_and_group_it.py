@@ -9,3 +9,7 @@ data = {
 df = pd. DataFrame(data)
 print("Original Data : ")
 print(df.to_string(index=False))
+
+grouped_mean = df.groupby("Class").mean()
+print("Mean of Grouped Data By Class : ")
+print(grouped_mean)
