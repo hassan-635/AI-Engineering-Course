@@ -23,7 +23,7 @@ student_data = {
 }
 df = pd.DataFrame(student_data)
 
-df = pd.get_dummies(df, columns=["Department"], dtype=int)
+df = pd.get_dummies(df, columns=["City"], dtype=int)
 
 print(df.to_string(index=False))
 print(df.corr(numeric_only=True))
