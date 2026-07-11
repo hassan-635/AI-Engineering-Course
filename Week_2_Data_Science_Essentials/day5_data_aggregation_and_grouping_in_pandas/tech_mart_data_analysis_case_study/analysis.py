@@ -80,3 +80,16 @@ avg_rev = df.groupby("City").agg(
 print(avg_rev)
 
 print("_________________________________________________________________________")
+
+print("Revenue Report for each Product category : ")
+report = df.groupby("Category").agg(
+    {
+        "Revenue" : ["sum", "mean", "max", "min"],
+        "Order_ID" : ["sum"]
+    }
+)
+print(report)
+
+print("_________________________________________________________________________")
+
+print("Performance of each Salesman : ")
