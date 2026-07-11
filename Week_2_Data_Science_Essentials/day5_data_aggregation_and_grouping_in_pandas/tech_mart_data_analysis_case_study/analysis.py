@@ -92,4 +92,13 @@ print(report)
 
 print("_________________________________________________________________________")
 
-print("Performance of each Salesman : ")
+print("Performance of each Salesperson : ")
+sp_performance = df.groupby("Salesperson").agg(
+    {
+        "Revenue" : ["sum", "mean"],
+        "Quantity" : ["sum"]
+    }
+)
+print(sp_performance)
+
+print("_________________________________________________________________________")
