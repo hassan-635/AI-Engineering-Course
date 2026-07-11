@@ -1,5 +1,3 @@
-# Find the average salary of each department.
-# Find the highest salary in each department.
 # Find the lowest salary in each department.
 # Count employees in each department.
 # Find the average experience of each department.
@@ -20,3 +18,14 @@ employees = {
 
 df = pd.DataFrame(employees)
 print(df.to_string(index=False))
+
+# Find the average salary of each department.
+
+avg_salary = df.groupby("Department")["Salary"].mean()
+print("Average Salary of Every Department : ")
+print(avg_salary)
+
+# Find the highest salary in each department.
+highest_salary = df.groupby("Department")["Salary"].max()
+print("Highest Salary of Every Department : ")
+print(highest_salary)
