@@ -1,9 +1,3 @@
-# Use .agg() to show:
-# Mean Salary
-# Max Salary
-# Min Salary
-# Employee Count
-
 import pandas as pd
 
 employees = {
@@ -41,3 +35,17 @@ print(emp)
 exp = df.groupby("Department")["Experience"].mean()
 print("Average Experience of each Department : ")
 print(exp)
+
+# Use .agg() to show:
+# Mean Salary
+# Max Salary
+# Min Salary
+# Employee Count
+
+stats = df.groupby("Department").agg({
+    "Salary" : ["mean", "max", "min"],
+    "Name" : ["count"]
+})
+
+print("Statistical Summary : ")
+print(stats)
