@@ -17,6 +17,9 @@ grouped_data = df.groupby("Department")["Salary"].mean()
 print("Mean Of Salaries in Grouped Data : ")
 print(grouped_data)
 
-grouped_data = df.groupby("Department").agg(["mean", "median", "mode", "max", "min"])
+grouped_data = df.groupby("Department").agg({
+    "Salary" : ["mean", "median", "max", "min"],
+    "Experience" : ["mean", "median", "max", "min"]
+})
 print("Summary Statistics of Data Grouped by Department : ")
 print(grouped_data)
