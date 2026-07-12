@@ -68,10 +68,11 @@ for i, value in enumerate(trainer_df.values):
 
 # relation between workout hours and calories burned
 plt.subplot(5, 2, 3)
-plt.scatter(x="Workout_Hours", y="Calories_Burned", c="orange", marker="o")
+plt.scatter(x=df["Workout_Hours"], y=df["Calories_Burned"], c="orange", marker="o")
 plt.xlabel("Workout Hours")
 plt.ylabel("Calories burnt")
 plt.title("Workout Hours vs. Calories Burnt")
+
 
 
 plt.show()
