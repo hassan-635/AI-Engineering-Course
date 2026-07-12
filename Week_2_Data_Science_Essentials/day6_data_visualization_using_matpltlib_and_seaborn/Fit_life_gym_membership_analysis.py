@@ -43,14 +43,25 @@ gym = {
 }
 
 df = pd.DataFrame(gym)
+
+trainer_df = df.groupby("Trainer")["New_Members"].sum()
+print(trainer_df.to_string(index=False))
 print(df.to_string(index=False))
 
 
-# which month has more members
 
-plt.plot(df["Month"], df["New_Members"], marker="o")
+plt.figure(figsize=(12, 8))
+# which month has more members
+plt.subplot(5, 2, 1)
+plt.plot(df["Month"], df["New_Members"],label="line", marker="o")
 plt.title("Month vs Members")
 plt.xlabel("Month")
 plt.ylabel("New Members")
 plt.grid(True)
+plt.subplot(5, 2, 2)
+plt.bar(trainer_df.index, trainer_df.values, label="bar")
+for i, value in enumerate(trainer_df.values):
+    plt.text(i, value+1, str(value))
 plt.show()
+
+# task 2 : Business Requirements 
