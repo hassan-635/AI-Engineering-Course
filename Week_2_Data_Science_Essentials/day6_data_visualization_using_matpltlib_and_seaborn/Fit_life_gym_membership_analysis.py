@@ -62,14 +62,14 @@ plt.ylabel("New Members")
 plt.grid(True)
 
 # total new members trained each year
-plt.subplot(5, 2, 2)
+plt.subplot(4, 2, 2)
 plt.bar(trainer_df.index, trainer_df.values, label="bar")
 for i, value in enumerate(trainer_df.values):
     plt.text(i, value+1, str(value))
 plt.grid(True)
 
 # relation between workout hours and calories burned
-plt.subplot(5, 2, 3)
+plt.subplot(4, 2, 3)
 plt.scatter(x=df["Workout_Hours"], y=df["Calories_Burned"], marker="o")
 plt.xlabel("Workout Hours")
 plt.ylabel("Calories burnt")
@@ -77,11 +77,19 @@ plt.title("Workout Hours vs. Calories Burnt")
 plt.grid(True)
 
 # age disatribution
-plt.subplot(5, 2, 4)
+plt.subplot(4, 2, 4)
 plt.hist(df["Age"], bins=4),
 plt.title("Age Distribution")
 plt.xlabel("Age")
 plt.ylabel("Frequency")
+plt.grid(True)
+
+# city vs new members
+plt.subplot(4, 2, 5)
+plt.bar(df["City"], df["New_Members"])
+plt.title("City vs. New Members")
+plt.xlabel("City")
+plt.ylabel("New Members")
 plt.grid(True)
 
 
