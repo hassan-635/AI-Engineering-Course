@@ -50,7 +50,8 @@ print(df.to_string(index=False))
 
 
 
-plt.figure(figsize=(12, 8))
+plt.figure(figsize=(12, 10))
+plt.subplots_adjust(wspace=0.8, hspace=0.8)
 
 # which month has more members
 plt.subplot(5, 2, 1)
@@ -68,11 +69,19 @@ for i, value in enumerate(trainer_df.values):
 
 # relation between workout hours and calories burned
 plt.subplot(5, 2, 3)
-plt.scatter(x=df["Workout_Hours"], y=df["Calories_Burned"], c="orange", marker="o")
+plt.scatter(x=df["Workout_Hours"], y=df["Calories_Burned"], marker="o")
 plt.xlabel("Workout Hours")
 plt.ylabel("Calories burnt")
 plt.title("Workout Hours vs. Calories Burnt")
+plt.grid(True)
 
+# age disatribution
+plt.subplot(5, 2, 4)
+plt.hist(df["Age"]),
+plt.title("Age Distribution")
+plt.xlabel("Age")
+plt.ylabel("Frequency")
+plt.grid(True)
 
 
 plt.show()
