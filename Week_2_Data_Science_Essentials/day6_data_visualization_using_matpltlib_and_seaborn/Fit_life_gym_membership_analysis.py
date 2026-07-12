@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 gym = {
     "Member_ID":[101,102,103,104,105,106,107,108,109,110,111,112],
@@ -42,4 +43,14 @@ gym = {
 }
 
 df = pd.DataFrame(gym)
-print(df)
+print(df.to_string(index=False))
+
+
+# which month has more members
+
+plt.plot(df["Month"], df["New_Members"], marker="o")
+plt.title("Month vs Members")
+plt.xlabel("Month")
+plt.ylabel("New Members")
+plt.grid(True)
+plt.show()
