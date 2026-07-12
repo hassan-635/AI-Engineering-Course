@@ -51,6 +51,7 @@ print(df.to_string(index=False))
 
 
 plt.figure(figsize=(12, 8))
+
 # which month has more members
 plt.subplot(5, 2, 1)
 plt.plot(df["Month"], df["New_Members"],label="line", marker="o")
@@ -58,10 +59,19 @@ plt.title("Month vs Members")
 plt.xlabel("Month")
 plt.ylabel("New Members")
 plt.grid(True)
+
+# total new members trained each year
 plt.subplot(5, 2, 2)
 plt.bar(trainer_df.index, trainer_df.values, label="bar")
 for i, value in enumerate(trainer_df.values):
     plt.text(i, value+1, str(value))
-plt.show()
 
-# task 2 : Business Requirements 
+# relation between workout hours and calories burned
+plt.subplot(5, 2, 3)
+plt.scatter(x="Workout_Hours", y="Calories_Burned", c="orange", marker="o")
+plt.xlabel("Workout Hours")
+plt.ylabel("Calories burnt")
+plt.title("Workout Hours vs. Calories Burnt")
+
+
+plt.show()
