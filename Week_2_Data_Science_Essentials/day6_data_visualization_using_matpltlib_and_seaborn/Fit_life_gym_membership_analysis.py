@@ -66,6 +66,7 @@ plt.subplot(5, 2, 2)
 plt.bar(trainer_df.index, trainer_df.values, label="bar")
 for i, value in enumerate(trainer_df.values):
     plt.text(i, value+1, str(value))
+plt.grid(True)
 
 # relation between workout hours and calories burned
 plt.subplot(5, 2, 3)
@@ -77,7 +78,7 @@ plt.grid(True)
 
 # age disatribution
 plt.subplot(5, 2, 4)
-plt.hist(df["Age"]),
+plt.hist(df["Age"], bins=4),
 plt.title("Age Distribution")
 plt.xlabel("Age")
 plt.ylabel("Frequency")
