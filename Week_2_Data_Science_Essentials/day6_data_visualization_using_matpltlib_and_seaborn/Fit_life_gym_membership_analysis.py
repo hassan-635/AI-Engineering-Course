@@ -92,5 +92,7 @@ plt.xlabel("City")
 plt.ylabel("New Members")
 plt.grid(True)
 
+# city members average burnt calories
+avg_burnt_cals = df.groupby("City")["Calories_Burned"]
 
 plt.show()
