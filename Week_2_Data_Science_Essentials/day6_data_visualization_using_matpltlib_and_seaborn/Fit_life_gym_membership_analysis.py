@@ -54,7 +54,7 @@ plt.figure(figsize=(12, 10))
 plt.subplots_adjust(wspace=0.8, hspace=0.8)
 
 # which month has more members
-plt.subplot(5, 2, 1)
+plt.subplot(4, 2, 1)
 plt.plot(df["Month"], df["New_Members"],label="line", marker="o")
 plt.title("Month vs Members")
 plt.xlabel("Month")
@@ -93,6 +93,23 @@ plt.ylabel("New Members")
 plt.grid(True)
 
 # city members average burnt calories
-avg_burnt_cals = df.groupby("City")["Calories_Burned"]
+avg_burnt_cals = df.groupby("City")["Calories_Burned"].mean()
+plt.subplot(4, 2, 6)
+plt.bar(avg_burnt_cals.index, avg_burnt_cals.values)
+plt.title("Average Burned Calories with respect to city")
+plt.xlabel("City")
+plt.ylabel("Calories Burned")
+plt.grid(True)
 
+# AVERAGE WORKOUT HOURS OF EVERY trainer
+
+avg_workout_hours = df.groupby("Trainer")["Workout_Hours"].mean()
+plt.subplot(4, 2, 7)
+plt.bar(avg_workout_hours.index, avg_workout_hours.values)
+plt.title("Average Workout Hours of Every Member")
+plt.xlabel("Trainer")
+plt.ylabel("Average Workout Hours")
+plt.grid(True)
+
+plt.tight_layout()
 plt.show()
