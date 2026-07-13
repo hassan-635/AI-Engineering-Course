@@ -32,4 +32,12 @@ gym = {
 }
 
 df = pd.DataFrame(gym)
-print(df.to_string(index=False))
+
+plt.hist(x=df[df["Trainer"] == "Ali"]["Calories_Burned"], bins = 4, color="green", label="Ali", alpha = 0.8)
+plt.hist(x=df[df["Trainer"] == "Ahmed"]["Calories_Burned"], bins = 4, color="blue", label="Ahmed", alpha = 0.3)
+plt.hist(x=df[df["Trainer"] == "Hassan"]["Calories_Burned"], bins = 4, color="red", label= "Hassan", alpha = 0.3)
+plt.grid(True)
+plt.legend()
+plt.xlabel("Calories Burned")
+plt.title("Distribution of Calories Burned")
+plt.show()
