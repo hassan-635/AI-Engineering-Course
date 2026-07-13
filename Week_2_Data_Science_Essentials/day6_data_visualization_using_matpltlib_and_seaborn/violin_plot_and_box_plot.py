@@ -12,4 +12,27 @@ data = {
 }
 
 df = pd.DataFrame(data)
-print(df)
+
+sns.set_style("whitegrid")
+plt.figure(figsize=(14, 6))
+
+plt.subplot(1, 2, 1)
+sns.boxplot(data=df,
+            x="Trainer",
+            y="Calories_Burned",
+            palette="Set2",
+            showmeans=True)
+plt.xlabel("Trainer")
+plt.ylabel("Calories Burned")
+plt.title("Box Plot")
+
+plt.subplot(1, 2, 2)
+sns.violinplot(data=df,
+               x="Trainer",
+               y="Calories_Burned",
+               palette="Set2")
+plt.xlabel("Trainer")
+plt.ylabel("Calories Burned")
+plt.title("Violin Plot")
+
+plt.show()
