@@ -24,3 +24,9 @@ print(df.to_string(index=False))
 del df["Student"]
 correlation = df.corr()
 print(correlation)
+
+sns.heatmap(data=correlation,
+            cmap="coolwarm",
+            annot=True)
+plt.title("Correlation between subjects")
+plt.show()
