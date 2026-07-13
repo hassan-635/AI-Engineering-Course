@@ -21,3 +21,6 @@ students = {
 
 df = pd.DataFrame(students)
 print(df.to_string(index=False))
+del df["Student"]
+correlation = df.corr()
+print(correlation)
