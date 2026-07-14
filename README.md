@@ -10,7 +10,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-In%20Progress-brightgreen?style=flat-square" alt="Status"/>
-  <img src="https://img.shields.io/badge/Week-1%20✅-blue?style=flat-square" alt="Current Week"/>
+  <img src="https://img.shields.io/badge/Week-2%20✅-blue?style=flat-square" alt="Current Week"/>
   <img src="https://img.shields.io/badge/Language-Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/School-School%20of%20AI-ff6f61?style=flat-square" alt="School of AI"/>
 </p>
@@ -30,7 +30,7 @@ I'm committed to learning by doing, so every week includes hands-on exercises, p
 | Week | Topic | Status | Folder |
 |:----:|:------|:------:|:------:|
 | 1 | Python Programming Basics | ✅ Completed | [`Week_1_Python_Programming_Basics`](./Week_1_Python_Programming_Basics/) |
-| 2 | Coming Soon | 🔜 | — |
+| 2 | Data Science Essentials | ✅ Completed | [`Week_2_Data_Science_Essentials`](./Week_2_Data_Science_Essentials/) |
 | 3 | Coming Soon | 🔜 | — |
 | 4 | Coming Soon | 🔜 | — |
 
@@ -93,12 +93,68 @@ I'm committed to learning by doing, so every week includes hands-on exercises, p
 
 ---
 
+## 📊 Week 2 — Data Science Essentials
+
+> **7 days of hands-on Data Science** covering NumPy, Pandas, data visualization, and real-world EDA projects.
+
+### 📅 Daily Breakdown
+
+<table>
+  <tr>
+    <th>Day</th>
+    <th>Topic</th>
+    <th>Key Concepts</th>
+  </tr>
+  <tr>
+    <td>📌 Day 1</td>
+    <td><strong>NumPy Fundamentals</strong></td>
+    <td>Arrays, basic math operations, multi-dimensional arrays, random arrays, row/column sums</td>
+  </tr>
+  <tr>
+    <td>📌 Day 2</td>
+    <td><strong>Advanced NumPy Operations</strong></td>
+    <td>Binary masking, broadcasting, random dataset filtering, float normalization, axis-specific stats</td>
+  </tr>
+  <tr>
+    <td>📌 Day 3</td>
+    <td><strong>Pandas for Data Manipulation</strong></td>
+    <td>DataFrames from dicts, CSV/Excel loading, Iris dataset exploration, filtering & saving data</td>
+  </tr>
+  <tr>
+    <td>📌 Day 4</td>
+    <td><strong>Data Cleaning & Preparation</strong></td>
+    <td>Handling missing values, dropping columns, renaming, merging datasets, one-hot encoding</td>
+  </tr>
+  <tr>
+    <td>📌 Day 5</td>
+    <td><strong>Data Aggregation & Grouping</strong></td>
+    <td>GroupBy operations, pivot tables, custom aggregation, summary stats, TechMart case study</td>
+  </tr>
+  <tr>
+    <td>📌 Day 6</td>
+    <td><strong>Data Visualization</strong></td>
+    <td>Matplotlib & Seaborn, histograms, violin plots, box plots, student performance & gym membership analysis</td>
+  </tr>
+  <tr>
+    <td>📌 Day 7</td>
+    <td><strong>EDA Projects</strong></td>
+    <td>Exploratory Data Analysis on Titanic dataset & Supermarket Sales dataset (Jupyter Notebooks)</td>
+  </tr>
+</table>
+
+---
+
 ## 🛠️ Tech Stack
 
 <p>
   <img src="https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/VS%20Code-Editor-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code"/>
-  <img src="https://img.shields.io/badge/Git-Version%20Control-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib"/>
+  <img src="https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge" alt="Seaborn"/>
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"/>
+  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code"/>
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
 </p>
 
 ---
@@ -117,6 +173,15 @@ AI-Engineering-Course/
 │   ├── 📁 day6_file_handling/
 │   └── 📁 day7_pythonic_code/
 │
+├── 📁 Week_2_Data_Science_Essentials/
+│   ├── 📁 day1_numpy/
+│   ├── 📁 day2_advanced_numpy_operations/
+│   ├── 📁 day3_pandas_for_data_manipulation/
+│   ├── 📁 day4_data_cleaning_and_preparation_with_pandas/
+│   ├── 📁 day5_data_aggregation_and_grouping_in_pandas/
+│   ├── 📁 day6_data_visualization_using_matplotlib_and_seaborn/
+│   └── 📁 day7_EDA_Project/
+│
 ├── 📄 .gitignore
 └── 📄 README.md
 ```
@@ -132,8 +197,14 @@ git clone https://github.com/hassan-635/AI-ENginnering-Course.git
 # Navigate to the project
 cd AI-ENginnering-Course
 
+# Install dependencies for Week 2
+pip install numpy pandas matplotlib seaborn jupyter
+
 # Run any Python file
 python Week_1_Python_Programming_Basics/day1_basics/day_1_intro_toi_python_and_development_setup.py
+
+# Or launch Jupyter for EDA projects
+jupyter notebook Week_2_Data_Science_Essentials/day7_EDA_Project/
 ```
 
 ---
