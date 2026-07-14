@@ -142,6 +142,13 @@ I'm committed to learning by doing, so every week includes hands-on exercises, p
   </tr>
 </table>
 
+### 🏗️ Week 2 Projects
+
+| Project | Description | Repository |
+|:--------|:------------|:----------:|
+| **Titanic Dataset EDA** | Exploratory Data Analysis on the Titanic dataset — survival patterns, feature analysis & visualizations | [🔗 View Project](https://github.com/hassan-635/AI-Engineering-Course/blob/main/Week_2_Data_Science_Essentials/day7_EDA_Project/Titanic%20Dataset.ipynb) |
+| **Supermarket Sales EDA** | Exploratory Data Analysis on Supermarket Sales data — trends, revenue insights & customer behavior | [🔗 View Project](https://github.com/hassan-635/AI-Engineering-Course/blob/main/Week_2_Data_Science_Essentials/day7_EDA_Project/supermarket_sales_dataset.ipynb) |
+
 ---
 
 ## 🛠️ Tech Stack
