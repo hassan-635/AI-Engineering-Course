@@ -29,8 +29,8 @@ I'm committed to learning by doing, so every week includes hands-on exercises, p
 
 | Week | Topic | Status | Folder |
 |:----:|:------|:------:|:------:|
-| 1 | Python Programming Basics | ✅ Completed | [`Week_1_Python_Programming_Basics`](./Week_1_Python_Programming_Basics/) |
-| 2 | Data Science Essentials | ✅ Completed | [`Week_2_Data_Science_Essentials`](./Week_2_Data_Science_Essentials/) |
+| 1 | Python Programming Basics | ✅ Completed | <a href="./Week_1_Python_Programming_Basics/"><img src="https://img.shields.io/badge/📂-Open%20Folder-2ea44f?style=for-the-badge" alt="Open Folder"/></a> |
+| 2 | Data Science Essentials | ✅ Completed | <a href="./Week_2_Data_Science_Essentials/"><img src="https://img.shields.io/badge/📂-Open%20Folder-2ea44f?style=for-the-badge" alt="Open Folder"/></a> |
 | 3 | Coming Soon | 🔜 | — |
 | 4 | Coming Soon | 🔜 | — |
 
@@ -89,7 +89,7 @@ I'm committed to learning by doing, so every week includes hands-on exercises, p
 
 | Project | Description | Repository |
 |:--------|:------------|:----------:|
-| **Task Manager** | A Python-based task management application built as the Week 1 capstone project | [🔗 View Project](https://github.com/hassan-635/Task-Manager) |
+| **Task Manager** | A Python-based task management application built as the Week 1 capstone project | <a href="https://github.com/hassan-635/Task-Manager"><img src="https://img.shields.io/badge/🚀-View%20Project-blueviolet?style=for-the-badge" alt="View Project"/></a> |
 
 ---
 
@@ -146,8 +146,8 @@ I'm committed to learning by doing, so every week includes hands-on exercises, p
 
 | Project | Description | Repository |
 |:--------|:------------|:----------:|
-| **Titanic Dataset EDA** | Exploratory Data Analysis on the Titanic dataset — survival patterns, feature analysis & visualizations | [🔗 View Project](https://github.com/hassan-635/AI-Engineering-Course/blob/main/Week_2_Data_Science_Essentials/day7_EDA_Project/Titanic%20Dataset.ipynb) |
-| **Supermarket Sales EDA** | Exploratory Data Analysis on Supermarket Sales data — trends, revenue insights & customer behavior | [🔗 View Project](https://github.com/hassan-635/AI-Engineering-Course/blob/main/Week_2_Data_Science_Essentials/day7_EDA_Project/supermarket_sales_dataset.ipynb) |
+| **Titanic Dataset EDA** | Exploratory Data Analysis on the Titanic dataset — survival patterns, feature analysis & visualizations | <a href="https://github.com/hassan-635/AI-Engineering-Course/blob/main/Week_2_Data_Science_Essentials/day7_EDA_Project/Titanic%20Dataset.ipynb"><img src="https://img.shields.io/badge/🚀-View%20Project-blueviolet?style=for-the-badge" alt="View Project"/></a> |
+| **Supermarket Sales EDA** | Exploratory Data Analysis on Supermarket Sales data — trends, revenue insights & customer behavior | <a href="https://github.com/hassan-635/AI-Engineering-Course/blob/main/Week_2_Data_Science_Essentials/day7_EDA_Project/supermarket_sales_dataset.ipynb"><img src="https://img.shields.io/badge/🚀-View%20Project-blueviolet?style=for-the-badge" alt="View Project"/></a> |
 
 ---
 
